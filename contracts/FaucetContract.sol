@@ -5,4 +5,7 @@ contract Faucet {
   //storage variables
   uint256 public funds = 10;
   uint32 public counter = 0;
+
+  //receive function to realiment the faucet
+  receive() external payable {}
 }
